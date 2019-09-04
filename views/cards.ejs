@@ -2,14 +2,11 @@
 <html>
   <head>
     <title><%= title %></title>
-	  <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
     <%- include('imports'); -%>
   </head>
   <body>
 
   	<%- include('navbar'); -%>
-
-  	<%- include('banner'); -%>
     
     <div class="container">
       <div class="row">
@@ -18,14 +15,6 @@
         <% }); %>
       </div>
     </div>
-	  
-	<!--<div class="container">
-      <div class="row">
-        <% posts.forEach((post) => { %>
-          <%- include('post_card', { post: post }); -%>
-        <% }); %>
-      </div>
-    </div>-->
 	  
   </body>
 </html>

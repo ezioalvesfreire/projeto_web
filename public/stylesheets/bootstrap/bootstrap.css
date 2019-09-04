@@ -595,8 +595,11 @@ pre code {
 }
 
 .no-gutters {
-  margin-right: 0;
-  margin-left: 0;
+  margin-top: 27px !important;
+	margin-bottom: 27px !important;
+    height: 1000px;
+    border-radius: 7px !important;
+    padding: 23px;
 }
 
 .no-gutters > .col,
@@ -4170,17 +4173,19 @@ input[type="button"].btn-block {
 }
 
 .navbar-brand {
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap;
+	display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    padding: 8px 14px;
+    font-size: 16px;
+    border-right: solid 1px #a7a3a3;
+    line-height: normal;
+    white-space: nowrap;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
+	color: #00a7fb !important;
 }
 
 .navbar-nav {
@@ -4560,7 +4565,7 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 7px;
 }
 
 .card > hr {
