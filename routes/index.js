@@ -3,6 +3,7 @@ var router = express.Router();
 var postsService = require('../services/postsService');
 var moviesService = require('../services/moviesService');
 var sobreService = require('../services/sobreService');
+var trabalheconoscoService = require('../services/trabalheconoscoService'); // trabalheconosco
 //var cardsService = require('../services/cardsService');
 
 /* GET home page. */
@@ -47,6 +48,12 @@ router.get('/movies', function(req, res, next){
 router.get('/sobre', function(req, res, next){
   var lprojects = sobreService.getProjects()
   res.render('sobre', { title: 'Sobre', lista_projects: lprojects});
+});
+
+//Mostra lista de vagas de emprego no menu projects
+router.get('/trabalheconosco', function(req, res, next){
+  var lprojects = trabalheconoscoService.getTrabalheconosco()
+  res.render('trabalheconosco', { title: 'trabalheconosco', lista_projects: lprojects});
 });
 
 module.exports = router;
