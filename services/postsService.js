@@ -14,6 +14,17 @@ var saveFilePosts = function(posts) {
     fs.writeFileSync(postsFilePath, data, 'utf-8');
 }
 
+var getPosts = function() {
+    var posts = loadFilePosts();
+    return posts;
+}
+
+var savePost = function(newPost) {
+    var posts = loadFilePosts();
+    posts.push(newPost);
+    saveFilePosts(posts);
+}
+
 module.exports = {
     getPosts: getPosts,
     savePost: savePost
